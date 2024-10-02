@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  mediaserver:
+    image: lscr.io/linuxserver/plex:latest
+    container_name: mediaserver
+    network_mode: host
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=PL/UTC
+      - VERSION=docker
+      - PLEX_CLAIM=claim-Lyrh1cyRikJByKsyg3rM
+    volumes:
+      - .media_data:/config
+      - ~/docker/media/Movies:/Movies
+      - ~/docker/media/tvshows:/TVShows
+    restart: unless-stopped
