@@ -10,7 +10,7 @@ services:
       - PGID=1000
       - TZ=PL/UTC
       - VERSION=docker
-      - PLEX_CLAIM=claim-Lyrh1cyRikJByKsyg3rM
+      - PLEX_CLAIM="your_token"
     volumes:
       - .media_data:/config
       - ~/docker/media/Movies:/Movies
