@@ -1,4 +1,4 @@
 # plex-media-server
- Easy to configure Docker Compose Plex Media server details, that I use on my home server
+ Easy to configure Docker Compose Plex Media server for personal use.
 
- Don't forget to set your directory path for your media 
+ Set your directory path for your own media 
