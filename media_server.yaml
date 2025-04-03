@@ -11,6 +11,6 @@ services:
       - PLEX_CLAIM="your_token"
     volumes:
       - .media_data:/config
-      - ~/docker/media/Movies:/Movies
-      - ~/docker/media/tvshows:/TVShows
+      - /path/to/your/Movies:/Movies
+      - /path/to/your/tvshows:/TVShows
     restart: unless-stopped
